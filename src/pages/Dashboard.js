@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
-import LabTabs from "../components/Dashboard/Tabs";
 import Header from "../components/Common/Header";
 import TabsComponent from "../components/Dashboard/Tabs";
-import axios from "axios";
 import Search from "../components/Dashboard/Search";
 import PaginationComponent from "../components/Dashboard/Pagination";
 import Loader from "../components/Common/Loader";
@@ -54,9 +52,8 @@ const getData = async () =>{
         
         <Search search={search} onSearchChange={onSearchChange}/>
         <TabsComponent
-        coins={search ? filteredCoins : paginatedCoins}
-       
-      />
+        coins={search ? filteredCoins : paginatedCoins} />
+
       {!search && (
         <PaginationComponent
           page={page}
@@ -68,6 +65,4 @@ const getData = async () =>{
        </>
     ) ;
       }
-
-
 export default DashboardPage ;
