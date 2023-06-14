@@ -1,5 +1,5 @@
 import  React, {useState} from 'react';
-import {Box, createTheme, ThemeProvider } from '@mui/material';
+import { createTheme, ThemeProvider } from '@mui/material';
 import Tab from '@mui/material/Tab';
 import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
@@ -10,7 +10,7 @@ import List from '../List';
 
 
 export default function TabsComponent({coins}) {
-  const [value, setValue] = React.useState('grid');
+  const [value, setValue] = React.useState('list');
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -45,7 +45,7 @@ export default function TabsComponent({coins}) {
         <TabPanel value="grid">
         <div className='grid-flex'>
           {coins.map((coin,i) => {
-          return <Grid coin={coin} key={i} /> ;
+          return <Grid coin={coin} key={i} /> ; 
         })}
         </div> 
         </TabPanel>

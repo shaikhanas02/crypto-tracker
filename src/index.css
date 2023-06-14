@@ -22,7 +22,7 @@ body {
  color: var(--white) ; 
 }                                                                  
 ::selection{
-  background-color: var(--blue);
+  background-color: var(--  grey);
   color: var(--white) ;
 }
 /* width */
@@ -46,9 +46,9 @@ a{
 }
 
 /* Handle on hover */
-/* ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
-} */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--white); 
+}
 
 img {
   -webkit-user-drag: none;

@@ -13,7 +13,7 @@
 }
 .links{
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; 
     align-items: center;
     gap: 1.5rem ;
 }
@@ -22,7 +22,10 @@
     font-weight: 500 ;
     font-size: 1.2rem;
 }
-
+.links p:visited,
+.links p:active{
+    color: var(--blue);
+  }
 .link:hover{
     color: var(--white) ;
     transition: all 0.3s;

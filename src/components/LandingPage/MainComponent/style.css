@@ -13,7 +13,7 @@
 
 .track-crypto-heading{
     color: var(--white) ;
-    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-width: 0.01px;
     -webkit-text-stroke-color: var(--white) ;
 }
 
@@ -39,6 +39,7 @@
     width : 50% ;
     position: relative;
     padding: 1rem;
+    height: 500px ;
 }
 
 .iphone{

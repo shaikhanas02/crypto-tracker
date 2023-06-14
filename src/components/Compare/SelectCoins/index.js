@@ -40,7 +40,7 @@ function SelectCoins({crypto1, crypto2, handleCoinChange}) {
         sx={styles}
           value={crypto1}
           label="Crypto 1" 
-          onChange={(event) => handleCoinChange(event, false)}
+          onChange={(event) => handleCoinChange(event,  true)}
 
         >
           {allCoins.filter((item)=> item.id != crypto2).map((coin, i)=> (
@@ -61,5 +61,6 @@ function SelectCoins({crypto1, crypto2, handleCoinChange}) {
     </div>
   ) ;
 }
+
 
 export default SelectCoins ;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react' ;
 import { CircularProgress } from '@mui/material';
 import "./style.css" ;
 
@@ -10,4 +10,5 @@ function Loader() {
   )
 }
 
-export default Loader
+
+export default Loader ;

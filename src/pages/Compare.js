@@ -78,15 +78,16 @@ async function getData(){
     setLoading(false) ;
   }
     }
+
     else{
       setCrypto1(event.target.value) ;
       const data = await getCoinData(event.target.value) ;
-        // settingChartData(setChartData, prices1, prices2) ;
-      coinObject(setCrypto1Data, data)
-    
+      // const prices1 = await getCoinPrices(crypto1, days , priceType );  
+      // const prices2 = await getCoinPrices(crypto2, days , priceType );
+      //   settingChartData(setChartData, prices1, prices2) ;
+      coinObject(setCrypto1Data, data) 
   }
-
-}
+} 
  
   return (
     <div>

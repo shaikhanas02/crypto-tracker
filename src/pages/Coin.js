@@ -37,7 +37,7 @@ function CoinPage() {
       if(prices.length > 0){ 
       settingChartData(setChartData, prices) ;
       setLoading(false) ;
-
+      
     }
   }
 }

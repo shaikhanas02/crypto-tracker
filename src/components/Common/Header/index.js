@@ -19,7 +19,6 @@ function Header(){
             </Link> */}
             <Link to='/dashboard'>
                <Button text={"Dashboard"} 
-               onClick={()=> console.log("ANAS")}
                />
             </Link>   
         </div>

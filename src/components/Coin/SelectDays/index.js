@@ -32,6 +32,7 @@ export default function SelectDays({days, handleDaysChange, noPTag}) {
           label="Days"
           onChange={handleDaysChange}
         >
+          <MenuItem value={7}>7 Days</MenuItem>
           <MenuItem value={30}>30 Days</MenuItem>
           <MenuItem value={60}>60 Days</MenuItem>
           <MenuItem value={90}>90 Days</MenuItem>

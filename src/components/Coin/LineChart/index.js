@@ -1,6 +1,6 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
-import Chart from 'chart.js/auto'; 
+import Chart from 'chart.js/auto';  
 import { convertNumbers } from "../../../functions/convertNumbers";
 
 
@@ -14,7 +14,7 @@ function LineChart({ chartData, priceType, multiAxis }) {
     },
     responsive: true,
     interaction: {
-      mode: "index",
+      mode: "index", 
       intersect: false,
     },
     scales: {

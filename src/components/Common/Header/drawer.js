@@ -17,14 +17,14 @@ export default function TemporaryDrawer() {
             <a href='/'>
             <p className='link'>Home</p>
             </a>
-            <a href='/'>
+            <a href='/compare'>
                 <p className='link'>Compare</p>
             </a>
             {/* <a href='/'>
                 <p className='link'>Watchlist</p>
             </a> */}
-            <a href='/'>
-                <p className='link'>Dashbaord</p>
+            <a href='/dashboard'>
+                <p className='link'>Dashboard</p>
             </a> 
             </div>
           </Drawer>
