@@ -24,7 +24,7 @@ function SelectCoins({crypto1, crypto2, handleCoinChange}) {
         },
       }
       
-
+console.log(allCoins) ;
       useEffect(()=>{
         getData() ;
       },[])
@@ -32,6 +32,7 @@ function SelectCoins({crypto1, crypto2, handleCoinChange}) {
       async function getData(){
         const myCoins = await get100Coins() ;
         setAllCoins(myCoins) ;
+      
       }
     return (
     <div className='coins-flex'>
@@ -40,13 +41,12 @@ function SelectCoins({crypto1, crypto2, handleCoinChange}) {
         sx={styles}
           value={crypto1}
           label="Crypto 1" 
-          onChange={(event) => handleCoinChange(event,  true)}
-
-        >
-          {allCoins.filter((item)=> item.id != crypto2).map((coin, i)=> (
+          onChange={(event) => handleCoinChange(event,  false)}
+        > 
+          {allCoins?.filter((item)=> item.id != crypto2).map((coin, i)=> (
           <MenuItem key={i} value={coin.id}>{coin.name}</MenuItem>
-          ))}
-        </Select>
+          ))} 
+        </Select> 
         <p>Crypto 2</p>
         <Select
         sx={styles}
@@ -54,7 +54,7 @@ function SelectCoins({crypto1, crypto2, handleCoinChange}) {
           label="Crypto 2" 
           onChange={(event) => handleCoinChange(event, true)}
         >
-          {allCoins.filter((item)=> item.id != crypto1).map((coin, i)=> (
+          {allCoins?.filter((item)=> item.id != crypto1).map((coin, i)=> (
           <MenuItem key={i} value={coin.id}>{coin.name}</MenuItem>
           ))}
         </Select>

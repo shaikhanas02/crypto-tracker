@@ -1,11 +1,12 @@
 import { convertDate } from "./convertDate";
-export const settingChartData = (setChartData, prices1, prices2) => {
+export const settingChartData = (setChartData, prices1, prices2 , event.target.value ) => {
+  // let name = "ppp"
   if(prices2){
     setChartData ({
       labels: prices1.map((price) => convertDate(price[0] ) ),
       datasets :[
         {
-          label:"Crypto1" ,
+          label: "ppp" ,
         data: prices1.map((price)=> price[1]),
         borderColor: "#3a80e9",
         borderWidth: 2 ,
@@ -17,7 +18,7 @@ export const settingChartData = (setChartData, prices1, prices2) => {
       },
       
         {
-          label:"Crypto2" ,
+          label: "ppp" ,
         data: prices2.map((price)=> price[1]),
         borderColor: "#3a80e9",
         borderWidth: 2 ,

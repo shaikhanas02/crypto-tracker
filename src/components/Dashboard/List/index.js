@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 function List({coin}){
     return (
-        <Link to={`./coin/${coin.id}`} >
+        <Link to={`./coin/${coin?.id}`} >
     <tr className="list-row">
         <Tooltip title="Coin logo">
         <td className="td-image">

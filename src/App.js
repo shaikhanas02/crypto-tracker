@@ -13,6 +13,7 @@ function App() {
         <Route path="/" element={<HomePage />} /> 
         <Route path="/dashboard" element={<DashboardPage/>} />
         <Route path="/dashboard/coin/:id" element={<CoinPage />} />
+        <Route path="/compare/coin/:id" element={<CoinPage />} />
         <Route path="/compare" element={<ComparePage/>} />
         {/* <Route path="/watchlist" element={<WatchlistPage/>} />  */}
       </Routes>

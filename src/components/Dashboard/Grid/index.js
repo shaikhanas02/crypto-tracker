@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 function Grid({coin}){
     return (
-        <Link to={`./coin/${coin.id}`} >
+        <Link to={`./coin/${coin.id}`}>
     <div className={coin.price_change_percentage_24h>0 ? 'grid-container' : "grid-container red"}> 
         <div className="info-flex">
             <img src={coin.image} className="coin-logo" />

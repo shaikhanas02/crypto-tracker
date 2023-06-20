@@ -37,7 +37,7 @@ function CoinPage() {
       if(prices.length > 0){ 
       settingChartData(setChartData, prices) ;
       setLoading(false) ;
-      
+
     }
   }
 }
@@ -69,7 +69,7 @@ const handlePriceTypeChange = async (event, newType) =>{
       {loading ? (
        <Loader /> 
       ) : (
-        <>
+        <> 
         <div className='grey-wrapper' style={{padding:"0rem 1rem"}}>
           <List coin={coinData}  />
         </ div>
